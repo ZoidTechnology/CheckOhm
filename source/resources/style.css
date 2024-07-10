@@ -1,0 +1,41 @@
+:root {
+	--background: hsl(0, 0%, 100%);
+	--background-alternate: hsl(0, 0%, 95%);
+	--foreground: hsl(0, 0%, 10%);
+	--foreground-alternate: hsl(0, 0%, 65%);
+	--red: hsl(0, 85%, 60%);
+	--red-alternate: hsla(0, 85%, 60%, 0.5);
+	--orange: hsl(35, 95%, 60%);
+	--green: hsl(145, 65%, 50%);
+	--unit: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: hsl(0, 0%, 10%);
+		--background-alternate: hsl(0, 0%, 5%);
+		--foreground: hsl(0, 0%, 100%);
+		--foreground-alternate: hsl(0, 0%, 50%);
+	}
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: calc(var(--unit) * 4);
+	box-sizing: border-box;
+	margin: auto;
+	background-color: var(--background);
+	padding: calc(var(--unit) * 4);
+	width: 800px;
+	min-height: 100%;
+	color: var(--foreground);
+	font-size: 16px;
+	font-family: sans-serif;
+}

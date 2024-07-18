@@ -111,7 +111,7 @@
 	</Section>
 	<Result {resolution} {reference} {referenceError} {measurement} {measurementError} />
 </main>
-<footer>© {new Date().getFullYear()} Seven Crumbs</footer>
+<footer>© {new Date().getFullYear()} Code7</footer>
 
 <style>
 	main {
